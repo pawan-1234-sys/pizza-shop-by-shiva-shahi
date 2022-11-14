@@ -1,0 +1,98 @@
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.hero{
+    color: white;
+    text-decoration: none;
+
+}
+.love{
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.tum:hover{
+background-color: none;
+    /* text-decoration: none; */
+
+}
+.tum:visited{
+    /* text-decoration: none; */
+    background-color: none;
+}
+.tum:link{
+    text-decoration: none;
+}
+.tum:active{
+    /* text-decoration: none; */
+    background-color: none;
+}
+.tumho{
+    background-color: #f43665;
+    /* background-color: #f44336; */
+
+    /* background-color:  #4CAF50; */
+
+   
+    color: white;
+    text-align: center;
+    width: 300px;
+}
+.jan{
+    background-color: #f43665;
+    color: white;
+    /* text-decoration:dotted; */
+}
+.jija{
+    /* background-color: #4CAF50; */
+    background-color: #f43665;
+
+    color: white; 
+}
+/* .kumkum{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+  
+    text-decoration: none;
+    display: inline-block;
+   
+    cursor: pointer;  
+} */
+.jiya{
+    /* text-align: center; */
+    border: none;
+    color: #4CAF50; 
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.siya{
+    font-family:cursive;
+    font-size: large;
+}
+.don{
+    color: white;
+}
+
+.pihu{
+    text-align: center;
+    color: #4CAF50; 
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+
