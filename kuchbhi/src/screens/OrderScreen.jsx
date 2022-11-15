@@ -13,7 +13,7 @@ const OrderScreen = () => {
       }, [dispatch]);
   return (
     <>
-      <h1 > your order </h1>
+      <h1 align="center"> your order </h1>
       {loading && <Loader />}
       {error && <Error error="something went wrong" />}
       {orders &&
