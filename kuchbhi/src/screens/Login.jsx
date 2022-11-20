@@ -18,10 +18,14 @@ const Login = () => {
     dispatch(loginUser(user));
   };
 
+
+
+
   return (
     <>
       <Container>
-        <Form>
+        <Form style={{ width: '50%',align:'center'}}>
+        <h1 align="center">Login </h1>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control

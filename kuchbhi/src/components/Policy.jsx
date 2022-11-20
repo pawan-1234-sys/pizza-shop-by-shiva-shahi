@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col,Image } from "react-bootstrap";
 
 const Policy = () => {
   return (
@@ -7,6 +7,7 @@ const Policy = () => {
       <Container style={{ marginTop: "50px" }}>
         {/* <h2>Terms and policy</h2> */}
         <Row>
+
           <Col md={10}>
             <h2 className="jiya">
               WELCOME AT DOMINO'S WE RECOGNIZE THAT PRIVACY IS IMPORTANT!!
@@ -117,6 +118,7 @@ const Policy = () => {
             </p>
 
           </Col>
+         
         </Row>
       </Container>
     </>

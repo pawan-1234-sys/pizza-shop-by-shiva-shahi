@@ -22,6 +22,7 @@ import AddNewPizza from "./components/Admin/AddNewPizza";
 import OrderList from "./components/Admin/OrderList";
 import Userlist from "./components/Admin/Userlist";
 import EditPizza from "./components/Admin/EditPizza";
+import Footer from "./screens/Footer";
 
 
 
@@ -64,8 +65,7 @@ function App() {
 
 
       </Routes>
-
-
+      <Footer/>
     </BrowserRouter>
     </>
   );

@@ -64,7 +64,7 @@ const About = () => {
         </Row>
         <Row>
           <h1 className="pihu">FOUNDER</h1>
-          <Col md={3}> 
+          <Col md={4}> 
           <Card style={{ width: "18rem", marginTop: "2px" }}>
         <Card.Img
           variant="top"
@@ -77,15 +77,14 @@ const About = () => {
         {/* </Card.Body> */}
     </Card>
           </Col>
-          <Col md={9}>
+          <Col md={8}>
             <p className="siya">
             Pizza Hut was founded in 1958 by brothers Dan and Frank Carney in their hometown of Wichita, Kansas.
              When a friend suggested opening a pizza parlor--then a rarity--they agreed that the idea could prove successful, and they borrowed $600 from their mother to start a business with partner John Bender.
               Renting a small building at 503 South Bluff in downtown Wichita and purchasing secondhand equipment to make pizzas, the Carneys and Bender opened the first Pizza Hut restaurant; on opening night, they gave pizza away to encourage community interest.
                A year later, in 1959, Pizza Hut was incorporated in Kansas, and Dick Hassur opened the first franchise unit in Topeka, Kansas.
                In the early 1960s Pizza Hut grew on the strength of aggressive marketing of the pizza restaurant idea. 
-               In 1962, the Carney brothers bought out the interest held by Bender, and Robert Chisholm joined the company as treasurer.
-                In 1966, when the number of Pizza Hut franchise units had grown to 145, a home office was established to coordinate the businesses from Wichita.
+            
 
             </p>
           </Col>

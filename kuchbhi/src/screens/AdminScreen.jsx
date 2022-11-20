@@ -19,7 +19,7 @@ const AdminScreen = () => {
     {/* start */} 
      <Container>
      <Row>
-          <h1 className="love">Admin Panel</h1>
+          <h1 className="love">Admin Panel of Shiva Shahi</h1>
 
           <Col md={3}>
      <ButtonGroup vertical style={{ minHeight: "50px" }}>

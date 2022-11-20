@@ -15,7 +15,7 @@ const Userlist = () => {
   return (
      
         <div>
-      <h1>User List</h1>
+      <h1 align="center">User List</h1>
       {loading && <Loader />}
       {error && <Error error="Error While Fetching Users" />}
       <Table striped bordered hover>

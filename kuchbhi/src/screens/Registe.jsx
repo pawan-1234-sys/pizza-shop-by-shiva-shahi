@@ -34,8 +34,8 @@ const Registe = () => {
  {loading && <Loader />}
         {success && <Success success="User Register Successfully" />}
         {error && <Error error="somthing went wrong" />}
- <Form >
- <h1 align="center">Regiteration </h1>
+ <Form style={{ width: '50%',align:'center'}}>
+ <h1 align="center">Registration </h1>
 
  <Form.Group className="mb-3" controlId="formBasicName">
             <Form.Label>Name</Form.Label>

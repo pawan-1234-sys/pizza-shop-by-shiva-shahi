@@ -17,7 +17,8 @@ const Contact = () => {
                This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Delhi. 
                 The belief that customer satisfaction is as important as their products and services, have helped this establishment garner a vast base of customers, which continues to grow by the day.
                   In Delhi, this establishment occupies a prominent location in Delta 1. 
-                  It is known to provide top service in the following categories: Pizza Outlets, Restaurants With Offers, Pizza Home Delivery Services, Burger Home Delivery.
+                  {/* It is known to provide top service in the following categories: Pizza Outlets, Restaurants With Offers, Pizza Home Delivery Services, Burger Home Delivery. */}
+
             </p>
 
             <Table striped bordered hover className="text-center">

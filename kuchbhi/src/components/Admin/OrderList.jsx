@@ -15,7 +15,7 @@ const OrderList = () => {
    
      
            <div>
-      <h1>Order Lists</h1>
+      <h1 align="center">Order Lists</h1>
       {loading && <Loader />}
       {error && <Error error="Admin Order req fail" />}
       <Table striped bordered hover>

@@ -7,7 +7,8 @@ import Loader from "../components/Loader";
 import Error from "../components/Error";
 import Filters from "../components/Filters";
 
-import { Carousel } from 'react-bootstrap'
+import { Carousel } from 'react-bootstrap';
+
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -44,6 +45,9 @@ const HomeScreen = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
+
+
+
       
     </Carousel>
     {loading ? (
@@ -54,16 +58,18 @@ const HomeScreen = () => {
       <Row>
          <Filters />   
       {pizzas.map((pizza) => (
-        <Col md={3} key={pizza.name}>
+        <Col md={4} key={pizza.name}>
           <Pizza pizza={pizza} />
         </Col>
       ))}
     </Row>
    ) }
 
-      
+ 
       </Container>
+
     </>
+
   );
 };
 
