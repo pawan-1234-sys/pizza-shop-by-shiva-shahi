@@ -23,14 +23,29 @@ const NavBar = () => {
               style={{ height: "60px" }}
             />
           </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
 
-            {currentUser ? (
-                <LinkContainer to="/">
-              <NavDropdown title={currentUser.name} id="basic-nav-dropdown">
 
+<LinkContainer to="/">
+                    <Nav.Link  className="don">Home</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/about">
+                    <Nav.Link  className="don">About Us</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/contact">
+                    <Nav.Link className="don">Contact Us</Nav.Link>
+                  </LinkContainer>
+
+
+            {currentUser ? (
+
+                <LinkContainer to="/">
+              <NavDropdown title={currentUser.name}  id="basic-nav-dropdown">
+
+              
               <LinkContainer to="/orders">
 
                     <NavDropdown.Item >
@@ -65,7 +80,7 @@ const NavBar = () => {
               ) : (
                 <>
                   {" "}
-
+{/* 
                   <LinkContainer to="/">
                     <Nav.Link  className="don">Home</Nav.Link>
                   </LinkContainer>
@@ -75,7 +90,7 @@ const NavBar = () => {
                   <LinkContainer to="/contact">
                     <Nav.Link className="don">Contact Us</Nav.Link>
                   </LinkContainer>
-                
+                 */}
 
 
 
