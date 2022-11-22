@@ -34,7 +34,7 @@ function App() {
     <BrowserRouter>
 
 
-    <TopBar/>
+    {/* <TopBar/> */}
     <NavBar/>
 
     <Routes> 

@@ -2,11 +2,16 @@ import React from 'react'
 // import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon} from 'cdbreact';
 import { CDBFooter, CDBFooterLink, CDBBtn, CDBIcon, CDBContainer,CDBBox } from 'cdbreact';
 
-import { Container, Row, Col, Table, Image } from "react-bootstrap";
+import { Container, Row, Col, Table, Image,Nav } from "react-bootstrap";
 import { FiPhoneCall } from "react-icons/fi";
 import { ImMobile } from "react-icons/im";
 import { AiOutlineMail } from "react-icons/ai";
 import {AiFillHome} from "react-icons/ai";
+
+import { LinkContainer } from "react-router-bootstrap";
+
+
+
 const Footer = () => {
   return (
     <CDBFooter className="shadow"  >
@@ -31,10 +36,28 @@ const Footer = () => {
           ABOUT
           </p>
           <CDBBox flex="column" display="flex"  style={{ cursor: 'pointer', padding: '0' }}>
-            <CDBFooterLink href="/" >Home</CDBFooterLink>
-            <CDBFooterLink href="/about">About Us</CDBFooterLink>
-            <CDBFooterLink href="/contact">Contact</CDBFooterLink>
-            <CDBFooterLink href="/policy">Term & Policy</CDBFooterLink>
+            {/* <CDBFooterLink className="tum" href="/" >Home</CDBFooterLink> */}
+
+
+
+            <LinkContainer to="/">
+                    <Nav.Link  className="don">Home</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/about">
+                    <Nav.Link  className="don">About Us</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/contact">
+                    <Nav.Link className="don">Contact Us</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/policy">
+                    <Nav.Link>Terms And Policy</Nav.Link>
+                  </LinkContainer>
+
+
+{/* 
+            <CDBFooterLink className="nazar" href="/about">About Us</CDBFooterLink>
+            <CDBFooterLink className="nazar" href="/contact">Contact</CDBFooterLink>
+            <CDBFooterLink className="nazar" href="/policy">Term & Policy</CDBFooterLink> */}
           </CDBBox>
         </CDBBox>
         <CDBBox>
@@ -43,8 +66,17 @@ const Footer = () => {
           </p>
           <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
             {/* <CDBFooterLink href="/">Support</CDBFooterLink> */}
-            <CDBFooterLink  href="/register">Sign Up</CDBFooterLink>
-            <CDBFooterLink href="/login">Sign In</CDBFooterLink>
+            {/* <CDBFooterLink  href="/register">Sign Up</CDBFooterLink> */}
+
+            <LinkContainer to="/register">
+                    <Nav.Link  className="don">Sign Up</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/login">
+                    <Nav.Link  className="don">Sign In</Nav.Link>
+                  </LinkContainer>
+
+
+            {/* <CDBFooterLink href="/login">Sign In</CDBFooterLink> */}
           </CDBBox>
         </CDBBox>
         <CDBBox>

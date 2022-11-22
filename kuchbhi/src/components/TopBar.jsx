@@ -9,21 +9,17 @@ const TopBar = () => {
       <Navbar className="jan" >
 
         <Container fluid>
-{/* 
-          <h6 className="text-light">
-            <MdLocalOffer className="text-warning" /> &nbsp;&nbsp; Free Home
-            Delivery on Order Above 500/- Rupees
-          </h6> */}
 
-          <h5 className="rohan">
+
+          {/* <h5 className="rohan">
             &nbsp;&nbsp;
            The Ultimate Pizzas
-          </h5>
-  {/* <Image
+          </h5> */}
+  <Image
               src="images/logo.png"
               alt="SHAHI"
               style={{ height: "50px" }}
-            /> */}
+            />
 
           <Nav className="ms-auto">
             <LinkContainer to="/" activeClassName="">

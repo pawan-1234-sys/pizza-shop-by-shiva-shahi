@@ -3,6 +3,10 @@ import { Navbar, Nav, Container, Image,NavDropdown} from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { logoutUser } from "../actions/userAction";
+
+
+import {BsCartCheckFill} from "react-icons/bs";
+
 const NavBar = () => {
   const dispatch = useDispatch();
   const cartState = useSelector((state) => state.cartReducer);
@@ -10,13 +14,13 @@ const NavBar = () => {
   const { currentUser } = userState;
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="none" variant="light">
-        <Container>
+      <Navbar collapseOnSelect expand="lg" bg="none" variant="light"  >
+        {/* <Container> */}
           <Navbar.Brand>
             <Image
               src="images/logo.png"
               alt="SHAHI"
-              style={{ height: "70px" }}
+              style={{ height: "60px" }}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -61,21 +65,37 @@ const NavBar = () => {
               ) : (
                 <>
                   {" "}
+
+                  <LinkContainer to="/">
+                    <Nav.Link  className="don">Home</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/about">
+                    <Nav.Link  className="don">About Us</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/contact">
+                    <Nav.Link className="don">Contact Us</Nav.Link>
+                  </LinkContainer>
+                
+
+
+
                   <LinkContainer to="/login">
-                    <Nav.Link>Login</Nav.Link>
+                    <Nav.Link className="don">Login</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/register">
-                    <Nav.Link>Register</Nav.Link>
+                    <Nav.Link className="don">Register</Nav.Link>
                   </LinkContainer>{" "}
                 </>
               )}
 
+
+
               <LinkContainer to="/cart">
-                <Nav.Link>Cart{cartState.cartItems.length} </Nav.Link>
+                <Nav.Link className="don"><BsCartCheckFill/>{cartState.cartItems.length} </Nav.Link>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        {/* </Container> */}
       </Navbar>
     </>
   );

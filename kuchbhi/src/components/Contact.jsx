@@ -9,7 +9,7 @@ const Contact = () => {
       <Container style={{ marginTop: "50px" }}>
         <Row>
           <Col md={6}>
-            <h1 >Pizza Shop</h1>
+            <h1 >The Ultimate Pizzas</h1>
 
 
             <p className="siya">

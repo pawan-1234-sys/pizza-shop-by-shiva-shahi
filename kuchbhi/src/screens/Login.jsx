@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import { useDispatch,useSelector } from "react-redux";
 import { loginUser } from "../actions/userAction";
+
+import { Row, Col, Image } from "react-bootstrap";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -23,9 +26,19 @@ const Login = () => {
 
   return (
     <>
-      <Container>
-        <Form style={{ width: '50%',align:'center'}}>
-        <h1 align="center">Login </h1>
+    {/* s */}
+<Container style={{ marginTop: "5px" }}>
+<h1 align="center">Login </h1>
+
+        <Row>
+
+
+          <Col md={5}>
+
+{/* e */}
+      {/* <Container> */}
+        <Form style={{ width: '100%',align:'center',marginTop: "60px"}}>
+        {/* <h1 align="center">Login </h1> */}
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -56,6 +69,16 @@ const Login = () => {
             Login
           </Button>
         </Form>
+        {/* s */}
+</Col>
+          <Col md={5}>
+            <Image
+              src="https://pbs.twimg.com/card_img/1591181954497380352/8ZfdH8eg?format=png&name=small"
+              style={{ width: "150%", height: "90%", marginTop: "30px" }}
+            />
+          </Col>
+          </Row>
+{/* e */}
       </Container>
     </>
   );

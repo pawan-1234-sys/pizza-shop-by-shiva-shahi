@@ -6,6 +6,8 @@ import Loader from "../components/Loader";
 import Success from "../components/Success";
 import Error from "../components/Error";
 
+import { Row, Col, Image } from "react-bootstrap";
+
 const Registe = () => {
 
 
@@ -30,12 +32,19 @@ const Registe = () => {
       };
   return (
   <>
- <Container>
+{/* s */}
+<Container style={{ marginTop: "5px" }}>
+ <h1 align="center">Registration </h1>
+
+        <Row>
+          <Col md={6}>
+{/* e */}
+ {/* <Container> */}
  {loading && <Loader />}
         {success && <Success success="User Register Successfully" />}
         {error && <Error error="somthing went wrong" />}
- <Form style={{ width: '50%',align:'center'}}>
- <h1 align="center">Registration </h1>
+ <Form style={{ width: '100%',align:'center', marginTop: "20px" }}>
+ {/* <h1 align="center">Registration </h1> */}
 
  <Form.Group className="mb-3" controlId="formBasicName">
             <Form.Label>Name</Form.Label>
@@ -87,6 +96,18 @@ const Registe = () => {
           Register
           </Button>
         </Form>
+
+{/* s */}
+</Col>
+          <Col md={6}>
+            <Image
+              src="https://eply.com/wp-content/uploads/2021/12/ePly-1.jpg"
+              style={{ width: "110%", height: "90%", marginTop: "30px" }}
+            />
+          </Col>
+          </Row>
+{/* e */}
+        
       </Container>
   </>
   );

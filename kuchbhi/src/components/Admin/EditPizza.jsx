@@ -52,7 +52,7 @@ const submitForm = (e) => {
     prices: {
       small: smallPrice,
       medium: mediumPrice,
-      larg: largprice,
+      large: largprice,
     },
   };
   dispatch(updatePizza(updatedPizza));
@@ -98,7 +98,7 @@ const submitForm = (e) => {
     </Form.Group>
 
     <Form.Group as={Col} controlId="formGridZip">
-      <Form.Label>Larg Price</Form.Label>
+      <Form.Label>Large Price</Form.Label>
       <Form.Control
         type="text"
         value={largprice}
