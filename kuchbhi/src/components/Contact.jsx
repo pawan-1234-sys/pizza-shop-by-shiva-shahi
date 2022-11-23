@@ -57,7 +57,7 @@ const Contact = () => {
           <Col md={6}>
             <Image
               src="https://i.pinimg.com/564x/1a/3e/82/1a3e8276fed9ff6ef5bfa55a276ef749.jpg"
-              style={{ width: "110%", height: "80%" }}
+              style={{ width: "100%", height: "80%" }}
             />
           </Col>
         </Row>

@@ -5,6 +5,8 @@ import { Table } from "react-bootstrap";
 import { deleteUser, getAllUsers } from "../../actions/userAction";
 import Loader from "./../Loader";
 import Error from "./../Error";
+
+
 const Userlist = () => {
   const userState = useSelector((state) => state.getAllUsersReducer);
   const { loading, error, users } = userState;
@@ -13,18 +15,19 @@ const Userlist = () => {
     dispatch(getAllUsers());
   }, [dispatch]);
   return (
-     
-        <div>
+
+        <div >
       <h1 align="center">User List</h1>
+
       {loading && <Loader />}
       {error && <Error error="Error While Fetching Users" />}
-      <Table striped bordered hover>
+      <Table responsive >
         <thead>
           <tr>
-            <th>User ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Delete</th>
+            <th >User ID</th>
+            <th >Name</th>
+            <th >Email</th>
+            <th >Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -46,6 +49,7 @@ const Userlist = () => {
             ))}
         </tbody>
       </Table>
+
     </div> 
 
   )

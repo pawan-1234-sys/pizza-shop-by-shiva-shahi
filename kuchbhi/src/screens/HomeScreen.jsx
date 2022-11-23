@@ -22,7 +22,9 @@ const HomeScreen = () => {
       <Container>
 
 
-      <Carousel>
+      <Carousel >
+      {/* <Carousel style={{  marginTop: "10px" }}> */}
+
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"

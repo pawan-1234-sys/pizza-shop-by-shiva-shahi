@@ -33,7 +33,7 @@ const Login = () => {
         <Row>
 
 
-          <Col md={5}>
+          <Col md={6}>
 
 {/* e */}
       {/* <Container> */}
@@ -71,10 +71,10 @@ const Login = () => {
         </Form>
         {/* s */}
 </Col>
-          <Col md={5}>
+          <Col md={6}>
             <Image
               src="https://pbs.twimg.com/card_img/1591181954497380352/8ZfdH8eg?format=png&name=small"
-              style={{ width: "150%", height: "90%", marginTop: "30px" }}
+              style={{ width: "100%", height: "90%", marginTop: "30px" }}
             />
           </Col>
           </Row>

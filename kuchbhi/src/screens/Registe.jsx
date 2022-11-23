@@ -102,7 +102,7 @@ const Registe = () => {
           <Col md={6}>
             <Image
               src="https://eply.com/wp-content/uploads/2021/12/ePly-1.jpg"
-              style={{ width: "110%", height: "90%", marginTop: "30px" }}
+              style={{ width: "100%", height: "90%", marginTop: "30px" }}
             />
           </Col>
           </Row>

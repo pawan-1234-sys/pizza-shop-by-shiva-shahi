@@ -25,7 +25,7 @@ const Pizzaslist = () => {
      
         <div>
          <Container>
-    <Table striped bordered hover>
+    <Table responsive >
       <thead>
         <tr>
                 <th>Image</th>

@@ -18,7 +18,7 @@ const OrderList = () => {
       <h1 align="center">Order Lists</h1>
       {loading && <Loader />}
       {error && <Error error="Admin Order req fail" />}
-      <Table striped bordered hover>
+      <Table responsive >
         <thead>
           <tr>
             <th>Order Id</th>

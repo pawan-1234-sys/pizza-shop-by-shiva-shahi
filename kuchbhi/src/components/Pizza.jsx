@@ -19,7 +19,8 @@ const Pizza = ({ pizza }) => {
 
   return (
     <>
-      <Card style={{ width: "18rem", marginTop: "30px" }}>
+    {/* <div className="container"> */}
+      <Card  style={{ width: "100%", marginTop: "30px" }}>
         <Card.Img
           variant="top"
           src={pizza.image}
@@ -96,7 +97,7 @@ const Pizza = ({ pizza }) => {
           </div>
         </Modal.Body>
       </Modal>
-
+      {/* </div> */}
     </>
   );
 };
