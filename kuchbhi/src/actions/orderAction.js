@@ -36,6 +36,8 @@ export const getUserOrders = () => async (dispatch, getState) => {
 };
 export const getAllOrders = () => async (dispatch, getState) => {
   // const currentUser = getState().loginUserReducer.currentUser;
+  // const currentUser = getState().loginUserReducer.currentUser;
+
   dispatch({
     type: "ALL_ORDER_REQUEST",
   });
@@ -48,6 +50,8 @@ export const getAllOrders = () => async (dispatch, getState) => {
 };
 export const deliverOrder = (orderid) => async (dispatch, getState) => {
   // const currentUser = getState().loginUserReducer.currentUser;
+  // const currentUser = getState().loginUserReducer.currentUser;
+
   dispatch({
     type: "GET_ALL_ORDER_REQUEST",
   });

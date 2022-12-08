@@ -1,4 +1,7 @@
 import React,{ useState } from "react";
+
+
+
 import { Container, Form, Button } from "react-bootstrap";
 import { useSelector,useDispatch } from "react-redux";
 import { registerUser } from "../actions/userAction";
@@ -10,7 +13,6 @@ import { Row, Col, Image } from "react-bootstrap";
 
 const Registe = () => {
 
-
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -18,8 +20,6 @@ const Registe = () => {
 
     const registerState = useSelector((state) => state.registerUserReducer);
     const { error, success, loading } = registerState;
-  
-  
     const dispatch = useDispatch();
 
     const registerhandler = () => {
@@ -30,6 +30,9 @@ const Registe = () => {
           dispatch(registerUser(user));
         }
       };
+
+
+
   return (
   <>
 {/* s */}
